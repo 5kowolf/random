@@ -133,5 +133,39 @@ window.onload = function() {
             }, 2600);
         }
     }
+
+    // 1 in a trillion rare event
+    if (Math.floor(Math.random() * 1000000000000) === 0) {
+        // Disco background
+        let discoInterval = setInterval(() => {
+            document.body.style.background = `hsl(${Math.random()*360}, 100%, 50%)`;
+        }, 100);
+        setTimeout(() => {
+            clearInterval(discoInterval);
+            document.body.style.background = selectedBg;
+        }, 8000); // Disco lasts 8 seconds
+
+        // GAY message
+        const gayDiv = document.createElement('div');
+        gayDiv.textContent = 'GAY';
+        gayDiv.style.textAlign = 'center';
+        gayDiv.style.fontSize = '4rem';
+        gayDiv.style.fontWeight = 'bold';
+        gayDiv.style.color = '#fff';
+        gayDiv.style.background = 'linear-gradient(90deg, #ff0000, #ff9900, #ffff00, #33ff00, #00ccff, #6600ff, #ff00cc)';
+        gayDiv.style.padding = '3rem';
+        gayDiv.style.margin = '3rem auto';
+        gayDiv.style.borderRadius = '2rem';
+        gayDiv.style.boxShadow = '0 0 40px #0008';
+        gayDiv.style.zIndex = 10000;
+        gayDiv.style.position = 'fixed';
+        gayDiv.style.left = '50%';
+        gayDiv.style.top = '50%';
+        gayDiv.style.transform = 'translate(-50%, -50%)';
+        document.body.appendChild(gayDiv);
+        setTimeout(() => {
+            gayDiv.remove();
+        }, 8000);
+    }
 };
 

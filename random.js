@@ -1,4 +1,5 @@
 window.onload = function() {
+    console.log('Script loaded!'); // Debug message
     const quotes = [
         "Iam atomic",
         "bankai Sakashima Yokoshima Happōfusagari",
@@ -15,6 +16,7 @@ window.onload = function() {
 
     const randomIndex = Math.floor(Math.random() * quotes.length);
     const selectedQuote = quotes[randomIndex];
+    console.log('Selected quote:', selectedQuote); // Debug message
     const quoteElement = document.createElement('p');
     quoteElement.textContent = selectedQuote;
     quoteElement.style.textAlign = 'center';
@@ -22,7 +24,8 @@ window.onload = function() {
     document.body.appendChild(quoteElement);
 
     if (selectedQuote === "Who's Running? Running Where... AND WHY?!") {
-        const audio = new Audio('sound.mp3'); // Make sure sound.mp3 is in the same folder
+        console.log('Playing sound!'); // Debug message
+        const audio = new Audio('shadow.mp3'); // Make sure shadow.mp3 is in the same folder
         audio.play();
     }
 };

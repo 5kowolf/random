@@ -22,10 +22,9 @@ window.onload = function() {
         "Kindness is just an excuse people use when they want something in return.",
         "It’s said that if you change, the world changes with you. But that’s a lie.",
         // The full king/horse quote as one string
-        "What's the difference between a king and his horse? I don’t mean kiddy stuff like ‘One’s a person and one’s an animal’ or ‘One has two legs and the other has four.’ If their form, ability, and power are exactly the same, why is it that one becomes the king and controls the battle, while the other becomes the horse and carries the king? There’s only one answer. INSTINCT! In battle, the one with the stronger instinct is the one who comes out on top!",
-        "No one will remember us. That’s how it should be.",
-        "Even if no one knows about it, even if no one remembers, I wanted us to live.",
-        "In the end, we were just kids who couldn’t become adults."
+        "What's the difference between a king and his horse? I don’t mean kiddy stuff like ‘One’s a person and one’s an animal’ or ‘One has two legs and the other has four.’ If their form, ability, and power are exactly the same, why is it that one becomes the king and controls the battle, while the other becomes the horse and carries the king? There’s only one answer. INSTINCT! In battle, the one with the stronger instinct is the one who comes out on top!No one will remember us. That’s how it should be Even if no one knows about it, even if no one remembers, I wanted us to live In the end, we were just kids who couldn’t become adults."
+        
+        
     ];
 
     const backgrounds = [

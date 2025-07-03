@@ -72,8 +72,7 @@ window.onload = function() {
             const audio = new Audio('shadow.mp3');
             audio.play();
         };
-        document.body.ap
-        pendChild(playButton);
+        document.body.appendChild(playButton);
     }
     if (selectedQuote === "I always come back") {
         const playButton = document.createElement('button');
@@ -86,7 +85,7 @@ window.onload = function() {
         };
         document.body.appendChild(playButton);
     }
-    if (selectedQuote === "genjutsu of that level doesn't work on me") {
+    if (selectedQuote === "Genjutsu of that level doesn't work on me") {
         const playButton = document.createElement('button');
         playButton.textContent = 'Play Sound';
         playButton.style.display = 'block';

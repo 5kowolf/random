@@ -22,6 +22,7 @@ window.onload = function() {
         "Kindness is just an excuse people use when they want something in return.",
         "It’s said that if you change, the world changes with you. But that’s a lie.",
         // The full king/horse quote as one string
+        "I always come back"
         
         
         
@@ -69,6 +70,18 @@ window.onload = function() {
         playButton.style.margin = '20px auto';
         playButton.onclick = function() {
             const audio = new Audio('shadow.mp3');
+            audio.play();
+        };
+        document.body.ap
+        pendChild(playButton);
+    }
+    if (selectedQuote === "I always come back") {
+        const playButton = document.createElement('button');
+        playButton.textContent = 'Play Sound';
+        playButton.style.display = 'block';
+        playButton.style.margin = '20px auto';
+        playButton.onclick = function() {
+            const audio = new Audio('trap.mp3');
             audio.play();
         };
         document.body.appendChild(playButton);

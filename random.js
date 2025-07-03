@@ -109,6 +109,29 @@ window.onload = function() {
         rareDiv.style.margin = '2rem auto';
         rareDiv.style.borderRadius = '1rem';
         document.body.appendChild(rareDiv);
+
+        // Confetti effect
+        for (let i = 0; i < 150; i++) {
+            const confetti = document.createElement('div');
+            confetti.style.position = 'fixed';
+            confetti.style.left = Math.random() * 100 + 'vw';
+            confetti.style.top = '-5vh';
+            confetti.style.width = '8px';
+            confetti.style.height = '16px';
+            confetti.style.background = `hsl(${Math.random()*360}, 80%, 60%)`;
+            confetti.style.opacity = '0.8';
+            confetti.style.borderRadius = '2px';
+            confetti.style.zIndex = 9999;
+            confetti.style.transition = 'top 2.5s linear, transform 2.5s linear';
+            document.body.appendChild(confetti);
+            setTimeout(() => {
+                confetti.style.top = '110vh';
+                confetti.style.transform = `rotate(${Math.random()*360}deg)`;
+            }, 10);
+            setTimeout(() => {
+                confetti.remove();
+            }, 2600);
+        }
     }
 };
 

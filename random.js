@@ -86,4 +86,16 @@ window.onload = function() {
         };
         document.body.appendChild(playButton);
     }
+    if (selectedQuote === "genjutsu of that level doesn't work on me") {
+        const playButton = document.createElement('button');
+        playButton.textContent = 'Play Sound';
+        playButton.style.display = 'block';
+        playButton.style.margin = '20px auto';
+        playButton.onclick = function() {
+            const audio = new Audio('itachi.mp3');
+            audio.play();
+        };
+        document.body.appendChild(playButton);
+    }
 };
+

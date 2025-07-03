@@ -24,8 +24,14 @@ window.onload = function() {
     document.body.appendChild(quoteElement);
 
     if (selectedQuote === "Who's Running? Running Where... AND WHY?!") {
-        console.log('Playing sound!'); // Debug message
-        const audio = new Audio('shadow.mp3'); // Make sure shadow.mp3 is in the same folder
-        audio.play();
+        const playButton = document.createElement('button');
+        playButton.textContent = 'Play Sound';
+        playButton.style.display = 'block';
+        playButton.style.margin = '20px auto';
+        playButton.onclick = function() {
+            const audio = new Audio('shadow.mp3');
+            audio.play();
+        };
+        document.body.appendChild(playButton);
     }
 };

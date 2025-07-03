@@ -96,5 +96,19 @@ window.onload = function() {
         };
         document.body.appendChild(playButton);
     }
+
+    // 1 in a million rare event
+    if (Math.floor(Math.random() * 1000000) === 0) {
+        const rareDiv = document.createElement('div');
+        rareDiv.textContent = 'They fear nothing. They devour worlds. But they fear the Slayer.';
+        rareDiv.style.textAlign = 'center';
+        rareDiv.style.fontSize = '2rem';
+        rareDiv.style.color = '#FFD700';
+        rareDiv.style.background = '#222';
+        rareDiv.style.padding = '2rem';
+        rareDiv.style.margin = '2rem auto';
+        rareDiv.style.borderRadius = '1rem';
+        document.body.appendChild(rareDiv);
+    }
 };
 

@@ -11,11 +11,55 @@ window.onload = function() {
         "Amaterasu",
         "If I had 5 different lives, I could have 5 different jobs, live in 5 different places, have 5 favorite foods(?), and fall in love with the same person 5 different times",
         "What you want to protect Ichigo is not the same as what I want to protect. What I wanted to protect was always you Ichigo",
-        "Who's Running? Running Where... AND WHY?!"
+        "Who's Running? Running Where... AND WHY?!",
+        "It’s not my fault. I was left unsupervised.",
+        "Let's see how many times you can be pulled apart and put back together again.",
+        "You may not recognize me at first, but I assure you, it's still me.",
+        "It’s not exactly loneliness that makes me feel lonely. It’s that I once knew what it was like to not be alone.",
+        "There’s no such thing as a genuine request. Everyone’s just using pretty words to disguise their own self-interest.",
+        "If the world is cruel, then at least the lies should be kind.",
+        "People who don't try to think about others will fail. But people who only think about others will also fail.",
+        "Kindness is just an excuse people use when they want something in return.",
+        "It’s said that if you change, the world changes with you. But that’s a lie.",
+        "What's the difference between a king and his horse?",
+        "I don’t mean kiddy stuff like ‘One’s a person and one’s an animal’ or ‘One has two legs and the other has four.’",
+        "If their form, ability, and power are exactly the same, why is it that one becomes the king and controls the battle, while the other becomes the horse and carries the king?",
+        "There’s only one answer.",
+        "INSTINCT!",
+        "In battle, the one with the stronger instinct is the one who comes out on top!",
+        "No one will remember us. That’s how it should be.",
+        "Even if no one knows about it, even if no one remembers, I wanted us to live.",
+        "In the end, we were just kids who couldn’t become adults."
+    ];
+
+    const backgrounds = [
+        'linear-gradient(135deg, #f6d365 0%, #fda085 100%)',
+        'linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%)',
+        'linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%)',
+        'linear-gradient(135deg, #fdcbf1 0%, #e6dee9 100%)',
+        'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
+        'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+        'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
+        'linear-gradient(135deg, #30cfd0 0%, #330867 100%)',
+        'linear-gradient(135deg, #5ee7df 0%, #b490ca 100%)',
+        'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        'linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%)',
+        'linear-gradient(135deg, #f7971e 0%, #ffd200 100%)',
+        'linear-gradient(135deg, #f857a6 0%, #ff5858 100%)',
+        'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+        'linear-gradient(135deg, #43cea2 0%, #185a9d 100%)',
+        'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
+        'linear-gradient(135deg, #30cfd0 0%, #330867 100%)',
+        'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
+        'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
+        'linear-gradient(135deg, #c471f5 0%, #fa71cd 100%)'
     ];
 
     const randomIndex = Math.floor(Math.random() * quotes.length);
     const selectedQuote = quotes[randomIndex];
+    const selectedBg = backgrounds[randomIndex % backgrounds.length];
+    document.body.style.background = selectedBg;
+
     console.log('Selected quote:', selectedQuote); // Debug message
     const quoteElement = document.createElement('p');
     quoteElement.textContent = selectedQuote;
